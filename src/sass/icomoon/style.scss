@@ -1,0 +1,84 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?z8n0o2') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?z8n0o2') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?z8n0o2##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="bp_"], [class*=" bp_"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bp_star {
+  &:before {
+    content: $bp_star; 
+  }
+}
+.bp_seach {
+  &:before {
+    content: $bp_seach; 
+  }
+}
+.bp_up {
+  &:before {
+    content: $bp_up; 
+  }
+}
+.bp_right {
+  &:before {
+    content: $bp_right; 
+  }
+}
+.bp_close {
+  &:before {
+    content: $bp_close; 
+  }
+}
+.bp_down {
+  &:before {
+    content: $bp_down; 
+  }
+}
+.bp_facebook {
+  &:before {
+    content: $bp_facebook; 
+  }
+}
+.bp_instagram {
+  &:before {
+    content: $bp_instagram; 
+  }
+}
+.bp_left {
+  &:before {
+    content: $bp_left; 
+  }
+}
+.bp_newsletter-plane {
+  &:before {
+    content: $bp_newsletter-plane; 
+  }
+}
+.bp_twitter {
+  &:before {
+    content: $bp_twitter; 
+  }
+}
+

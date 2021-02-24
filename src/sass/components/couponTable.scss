@@ -1,0 +1,50 @@
+.tbl-br {
+  flex: 1;
+  margin: 15px 10px;
+  // padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid color(borderColor);
+  h2 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 17px;
+    text-align: center;
+  }
+  table,td {
+    color: black;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: left;
+    padding: 10px 15px;
+    background-color: rgba($color: color(borderColor), $alpha: .1);
+  }
+  th {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-bottom: 1px solid color(borderColor);
+  }
+  .cntr {
+    text-align: center;
+  }
+  table {
+    width: 100%;
+    border-radius: 5px;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  .tbl-hd {
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .tcntr {
+    text-align: center;
+    font-weight: weights(bold);
+    font-style: oblique;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid color(borderColor);
+
+  }
+}

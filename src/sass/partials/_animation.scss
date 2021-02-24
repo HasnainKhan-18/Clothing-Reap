@@ -1,0 +1,20 @@
+// Assign Element Animation And Beneath Create Keyframes.
+@include animationKeyframes(".fadeIn", fadeIn, 700ms) {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@include animationKeyframes(".fadeOut", fadeOut, 700ms) {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

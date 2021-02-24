@@ -1,0 +1,74 @@
+.stm-bg {
+    padding: 40px;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    background-color: color(primaryColor);
+}
+.sitemap {
+    padding: 20px;
+}
+.Wrp {
+    margin: 0 auto;
+}
+.stm-fltr {
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid color(borderColor);
+}
+.active {
+    width: 20px;
+    height: 10px;
+    color: white;
+    margin: 8px 1px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-weight: weights(bold);
+    background-color: color(primaryColor);
+}
+.active:hover {
+    color: white;
+}
+.ltr {
+    width: 20px;
+    height: 10px;
+    margin: 8px 4px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    text-align: center;
+    font-weight: weights(bold);
+    transition: all linear 0.2s;
+}
+.ltr:hover {
+    color: white;
+    background-color: color(primaryColor);
+}
+.stm-wrp {
+    display: flex;
+    flex-wrap: wrap;
+}
+.stm-links {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba($color: color(borderColor), $alpha: .1);
+    border: 1px solid color(borderColor);
+    border-top: 0;
+
+}
+.lnk-wrp {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px 45px;
+    margin: 0 auto;
+}
+.st-lnk {
+    display: block;
+    font-size: 16px;
+    color:#247C92 ;
+    transition: all linear 0.2s;
+}
+.st-lnk:hover{
+    padding-left: 6px;
+}

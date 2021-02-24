@@ -1,0 +1,62 @@
+.toLeft,
+.toRight,
+.toTop,
+.toBottom,
+.toFadeIn,
+.fromFadeOut,
+.toZoomIn,
+.fromZoomOut {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.toLeft {
+    transform: translateX(-20px);
+}
+
+.toRight {
+    transform: translateX(20px);
+}
+
+.toTop {
+    transform: translateY(-20px);
+}
+
+.toBottom {
+    transform: translateY(20px);
+}
+
+.toZoomIn,
+.fromZoomOut {
+    transform: scale(1.1);
+}
+
+.fromLeft,
+.fromRight,
+.fromTop,
+.fromBottom,
+.fromFadeIn,
+.toFadeOut,
+.fromZoomIn,
+.toZoomOut {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms linear,
+        visibility 300ms linear,
+        transform 300ms linear;
+}
+
+.fromLeft,
+.fromRight {
+    transform: translateX(0);
+}
+
+.fromTop,
+.fromBottom {
+    transform: translateY(0);
+}
+
+.fromZoomIn,
+.toZoomOut {
+    transform: scale(1);
+}

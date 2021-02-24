@@ -1,0 +1,77 @@
+.tpopup {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+    display: flex;
+    margin: 0 auto;
+    position: fixed;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.tpopov {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.Wrp {
+    margin: 0 auto;
+}
+.term-pop {
+    width: 550px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #171144;
+}
+.t-top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .4);
+}
+h2 {
+    margin: 0;
+    color: white;
+}
+.closed {
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    text-decoration: none;
+}
+.closes {
+    top: 0;
+    right: 10px;
+    border: none;
+    outline: none;
+    color: #171144;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    text-decoration: none;
+    position: absolute;
+}
+.list {
+    margin: 0;
+    font-size: 14px;
+    padding-left: 15px;
+    line-height: 1.8;
+    color: white;
+}
+li {
+    padding: 3px 0;
+}
+p {
+    color: white;
+    margin-top: 5px;
+}

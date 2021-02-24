@@ -1,0 +1,71 @@
+:root {
+  --spacing: #{$spacer};
+  --cw: 100%;
+  --cmt: var(--spacing);
+}
+
+.row {
+  margin: 0 calc(-1 * var(--spacing));
+  @extend [class*="Flx"];
+
+  &.nogtr {
+    --spacing: 0;
+  }
+}
+
+[class*="col-"],
+.col,
+.colpd,
+.cfill {
+  padding: 0 var(--spacing);
+}
+
+[class*="col-"],
+.col {
+  width: var(--cw);
+}
+
+.row:not(.nogtr) {
+  [class*="col-"],
+  .col {
+    + [class*="col-"],
+    + .col {
+      margin-top: var(--cmt);
+    }
+  }
+}
+
+.cfill {
+  flex: 1;
+}
+
+.cntr {
+  margin: auto;
+}
+
+@mixin grids($size: "") {
+  @for $i from 1 through $total-grids {
+    .col-#{$size}-#{$i} {
+      --cw: #{percentage(1 / $i)};
+      --cmt: 0;
+    }
+  }
+}
+
+@include grids(xxs);
+
+@media (min-width: mediaQuery(xs)) {
+  @include grids(xs);
+}
+
+@media (min-width: mediaQuery(sm)) {
+  @include grids(sm);
+}
+
+@media (min-width: mediaQuery(md)) {
+  @include grids(md);
+}
+
+@media (min-width: mediaQuery(lg)) {
+  @include grids(lg);
+}

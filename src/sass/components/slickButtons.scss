@@ -1,0 +1,10 @@
+// Slick Arrows Button Hover Effect <start>
+.slick-arrow {
+  transition: color 300ms linear;
+
+  &:hover:before {
+    color: color(secondaryColor);
+  }
+}
+
+// Slick Arrows Button Hover Effect <end>

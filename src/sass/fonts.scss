@@ -1,0 +1,12 @@
+// this font file use when page speed has error of perloaded.
+/*======EXAMPLE========= 
+<link rel="preload" href="./build/css/fonts.css" as="style" onload="this.rel='stylesheet'"> 
+========================*/
+
+//Settings Have Custom Variables, Icons Variable and mixins.
+@import "partials/settings";
+
+/*======================
+Font Face Starts
+======================== */
+@import "partials/_fonts";

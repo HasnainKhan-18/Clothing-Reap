@@ -1,0 +1,34 @@
+{
+  "name": "crea8ive-bench",
+  "version": "1.0.0",
+  "description": "Crea8ive Bench",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp tasks",
+    "build": "gulp"
+  },
+  "author": "Ibrahim Aftab",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "gulp": "*",
+    "gulp-babel": "*",
+    "gulp-file-include": "^2.1.1",
+    "gulp-imagemin": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*"
+  },
+  "dependencies": {
+    "audit": "0.0.6",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "caniuse-lite": "^1.0.30001179",
+    "gulp-cache": "*",
+    "gulp-cached": "^1.1.1",
+    "gulp-jsonminify": "^1.1.0",
+    "imagemin": "^6.1.0",
+    "imagemin-webp": "^6.0.0"
+  }
+}

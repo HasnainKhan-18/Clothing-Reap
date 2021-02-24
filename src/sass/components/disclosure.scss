@@ -1,0 +1,15 @@
+.disc{
+    padding: 15px;
+    background-color: #EAE8FC;
+    .Wrp{
+        .disc-txt {
+            color: color(primaryTextColor);
+            b{
+                font-weight: weights(bold);
+            }
+            margin: 0;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}

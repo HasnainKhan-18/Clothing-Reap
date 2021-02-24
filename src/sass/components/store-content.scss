@@ -1,0 +1,62 @@
+.str-bg {
+    padding: 15px;
+    background-color: color(primaryColor);
+}
+.Wrp {
+    margin: 0 auto;
+}
+.bg-cpn {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    // background-color: white;
+}
+.str-logo {
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgba($color: #000000, $alpha: .2);
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.bg-wrp {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.str-cntnt {
+    padding: 15px;
+}
+.str-cntnt h3 {
+    color: white;
+}
+.str-cntnt p {
+    color: white;
+}
+.vst-site {
+    width: 130px;
+    color: white;
+    padding: 15px 30px;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    border: 1px solid white;
+    font-weight: weights(bold);
+    transition: all linear 0.2s;
+}
+.vst-site:hover {
+    color: color(primaryTextColor);
+    background-color: white;
+}
+.rting {
+    margin-top: 25px;
+}
+h5 {
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+}

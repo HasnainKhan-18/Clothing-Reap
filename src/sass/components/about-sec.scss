@@ -1,0 +1,54 @@
+.abt-sec {
+    padding: 20px;
+}
+.Wrp {
+    margin: 0 auto;
+}
+.sd-wrp {
+display: flex;
+flex-wrap: wrap;
+}
+.text-sd {
+    flex: 1;
+}
+.abt-txt {
+    font-size: 17px;
+}
+.rltd-sd {
+    width: 400px;
+}
+.rltd-str {
+    margin-bottom: 20px;
+    // padding: 20px;
+}
+h3 {
+    padding-left: 10px;
+}
+.wrpr {
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo-img {
+    width: 110px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid color(borderColor);
+}
+.logo-img img {
+    width: 100%;
+    object-fit: cover;
+}
+.ctg-lnk {
+    padding: 10px;
+    text-align: center;
+    margin: 5px 6px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: .2);
+    transition: all linear 0.4s;
+}
+.ctg-lnk:hover {
+    background-color: color(primaryColor);
+    color: white;
+}

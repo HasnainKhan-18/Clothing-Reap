@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@import "../partials/import";
+
+// Libraries
+@import "../libraries/slick/slick";
+@import "../libraries/slick/slick-theme";
+// -------- /
+
+// Component
+@import "../components/homeBanner.scss";
+@import "../components/coupons-home.scss";
+@import "../components/categoryHome.scss";
+// -------- /
+

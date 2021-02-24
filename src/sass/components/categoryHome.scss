@@ -1,0 +1,39 @@
+.ctg {
+    padding: 40px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: weights(bold);
+    background-color: color(primaryColor);
+}
+
+
+.ctg-hom {
+    padding: 20px;
+    .Wrp {
+        .ctg-wrp {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(6,1fr);
+            margin-top: 40px;
+            .ctgry {
+                text-align: center;
+                padding: 10px;
+                background-color: rgba($color: color(borderColor), $alpha: .1);
+                h4 {
+                    margin: 0;
+                    font-size: 15px;
+                }
+                .icn {
+                    display: inline-flex;
+                    width: 100px;
+                    height: 100px;
+                    img {
+                        width: 70%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

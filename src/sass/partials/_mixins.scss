@@ -1,0 +1,270 @@
+@mixin font($size: $font-size, $weight: 400) {
+  font: {
+    family: #{$font-family}, sans-serif;
+    size: $size;
+    weight: $weight;
+  }
+}
+
+@mixin border-radius($radius: $border-radius) {
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+
+// Single side border-radius
+@mixin border-top-radius($radius: $border-radius) {
+  border-top-right-radius: $radius;
+  border-top-left-radius: $radius;
+  background-clip: padding-box;
+}
+
+@mixin border-right-radius($radius: $border-radius) {
+  border-bottom-right-radius: $radius;
+  border-top-right-radius: $radius;
+  background-clip: padding-box;
+}
+
+@mixin border-bottom-radius($radius: $border-radius) {
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+  background-clip: padding-box;
+}
+
+@mixin border-left-radius($radius: $border-radius) {
+  border-bottom-left-radius: $radius;
+  border-top-left-radius: $radius;
+  background-clip: padding-box;
+}
+
+@mixin border(
+  $axis: map-get($border, width),
+  $color: map-get($border, color),
+  $style: map-get($border, style)
+) {
+  @if axis !=map-get($border, width) {
+    border: $style $color;
+    border-width: $axis;
+  } @else {
+    border: $style $axis $color;
+  }
+}
+
+@mixin box-shadow(
+  $top: 0,
+  $left: 0,
+  $blur: 7px,
+  $size: 0,
+  $color: rgba(black, 0.12),
+  $inset: false
+) {
+  @if $inset {
+    box-shadow: inset $top $left $blur $size $color;
+  } @else {
+    box-shadow: $top $left $blur $size $color;
+  }
+}
+
+@mixin matrix(
+  $matrix: (
+    width: 1,
+    height: 1,
+    skewX: 0,
+    skewY: 0,
+    positionX: 0,
+    positionY: 0,
+  )
+) {
+  $width: map-get($matrix, width);
+  $height: map-get($matrix, height);
+  $skewX: map-get($matrix, skewX);
+  $skewY: map-get($matrix, skewY);
+  $positionX: map-get($matrix, positionX);
+  $positionY: map-get($matrix, positionY);
+  transform: matrix($width, $skewX, $skewY, $height, $positionX, $positionY);
+}
+
+@mixin linearGradient($top, $bottom) {
+  background: $top;
+  background: linear-gradient(to bottom, $top 0%, $bottom 100%);
+}
+
+@mixin horizontalGradient(
+  $primary: color(primaryColor),
+  $secondary: color(primaryContrastColor)
+) {
+  background: $primary;
+  background: linear-gradient(to right, $primary 15%, $secondary 100%);
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: calc(#{$expression});
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin abs-pos($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin emSize($sizeValue: $font-size) {
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: ($font-size / $sizeValue) + em;
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  animation: #{$str};
+}
+
+// Font Face Mixin
+@mixin font-face($name, $path, $weight: 400, $style: normal, $exts: woff2) {
+  $src: local($name);
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_"),
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype",
+  );
+
+  @each $ext in $exts {
+    $extmod: if(
+      map-has-key($extmods, $ext),
+      $ext + map-get($extmods, $ext),
+      $ext
+    );
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append(
+      $src,
+      url(quote($path + "." + $extmod)) format(quote($format)),
+      comma
+    );
+  }
+
+  @font-face {
+    font: {
+      family: quote($name);
+      style: $style;
+      weight: $weight;
+      display: swap;
+    }
+
+    src: $src;
+  }
+}
+
+@mixin flex-center($axis: "xy") {
+  display: flex;
+  flex-wrap: wrap;
+
+  @if $axis== "x" {
+    justify-content: center;
+  } @else if $axis== "y" {
+    align-items: center;
+  } @else {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Color contrast
+@mixin color-yiq($color, $prop: "color") {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+  @if ($yiq>=150) {
+    #{$prop}: #111;
+  } @else {
+    #{$prop}: #fff;
+  }
+}
+
+@mixin animationKeyframes(
+  $selector,
+  $animationName,
+  $animationDuration: 300ms,
+  $animationDelay: "",
+  $animationRepeat: ""
+) {
+  #{unquote($selector)} {
+    animation: $animationName $animationDuration;
+
+    @if $animationDelay != "" {
+      animation-delay: $animationDelay;
+    }
+
+    @if $animationRepeat != "" {
+      animation-iteration-count: $animationRepeat;
+    }
+  }
+
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+// Chrome / Other Chromium Browser
+@mixin autoCompleteField() {
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    @content;
+  }
+}

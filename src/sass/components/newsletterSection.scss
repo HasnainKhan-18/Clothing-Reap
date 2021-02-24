@@ -1,0 +1,47 @@
+.nwsltr {
+    padding: 30px;
+}
+.Wrp {
+    margin: 0 auto;
+}
+.wrapr {
+    display: flex;
+}
+.image {
+    width: 30%;
+}
+.srch-wrp {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+.src-sd {
+    width: 100%;
+    display: flex;
+    padding: 4px;
+    border-radius: 50px;
+    border: 2px solid color(primaryColor);
+}
+.srch-br {
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 50px;
+}
+.nws-btn {
+    width: 130px;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    font-weight: weights(bold);
+    border-radius: 50px;
+    background-color: color(secondaryColor);
+}
+p {
+    padding-bottom: 15px;
+}
+.txt {
+    padding-top: 15px;
+    padding-bottom: 0;
+}

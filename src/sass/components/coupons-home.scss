@@ -1,0 +1,250 @@
+.hm-cpn {
+    padding: 30px;
+    padding-bottom: 0;
+    .Wrp {
+        h1 {
+           padding-left: 20px;
+        }
+        .cpn-wrpr {
+            display: flex;
+            .cpns {
+                width: 550px;
+                margin: 10px;
+                padding: 20px;
+                position: relative;
+                border-radius: 10px;
+                transition: all linear 0.2s;
+                box-shadow: 0 0 5px rgba($color: #000000, $alpha: .2);
+                // &:hover {
+                //     box-shadow: 0 0 10px rgba($color: #000000, $alpha: .2);
+                // }
+                .img-br {
+                    width: 100px;
+                    height: 100px;
+                    padding: 10px;
+                    margin: 0 auto;
+                    display: block;
+                    border-radius: 15px;
+                    border: 2px solid #006780;
+                    margin-bottom: 20px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                h4 {
+                    text-align: center;
+                }
+                .exclsv {
+                    top: 80px;
+                    font-weight: weights(bold);
+                    color: #FF5050;
+                    position: absolute;
+                }
+                .vrifid {
+                    top: 80px;
+                    right: 20px;
+                    font-weight: weights(bold);
+                    color: #29A745;
+                    position: absolute;
+
+                }
+                .btn {
+                    flex: 1;
+                    width: 100%;
+                    padding: 10px;
+                    overflow: hidden;
+                    position: relative;
+                    display: inline-block;
+                    background-color: white;
+                    font-weight: weights(bold);
+                    color: color(primaryTextColor);
+                    border: 2px solid color(secondaryColor);
+                    &::after {
+                        top: 0;
+                        left: 0;
+                        content: "";
+                        width: 142%;
+                        height: 628%;
+                        position: absolute;
+                        transition: all .6s ease-in-out;
+                        background: color(secondaryColor);
+                        transform: translateX(-88%) translateY(-25%) rotate(45deg);
+                    }
+                    &:hover::after {
+                        transform: translateX(-9%) translateY(-25%) rotate(45deg);
+                    }
+                    &:hover {
+                        color: white;
+                    }
+                    span {
+                        position: relative;
+                        z-index: 1;
+                    }
+                    
+                }
+                .t-wrp {
+                    display: flex;
+                    text-align: center;
+                    h5 {
+                        margin: 0;
+                        padding-top: 5px;
+                    }
+                    .arrow {
+                        width: 8px;
+                        height: 8px;
+                        margin-top: 10px;
+                        margin-left: 3px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                &:hover {
+                    box-shadow: 0 0 10px rgba($color: #000000, $alpha: .3);
+                }
+            }
+            .cpn-wrp {
+                display: flex;
+                flex-wrap: wrap;
+                padding-bottom: 5px;
+                .crd {
+                    width: 405px;
+                    margin: 10px;
+                    padding: 15px;
+                    display: flex;
+                    border-radius: 10px;
+                    align-items: center;
+                    transition: all linear 0.2s;
+                    box-shadow: 0 0 5px rgba($color: #000000, $alpha: .2);
+                    &:hover {
+                        box-shadow: 0 0 10px rgba($color: #000000, $alpha: .3);
+                    }
+                    .img-br {
+                        width: 200px;
+                        // height: 90px;
+                        padding: 10px;
+                        display: block;
+                        border-radius: 15px;
+                        border: 2px solid #006780;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50px;
+                            
+                        }
+                    }
+                    h4 {
+                        font-size: 15px;
+                        margin-bottom: 0;
+                    }
+                    .content {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        margin-left: 10px;
+                        .exclsv {
+                            font-weight: weights(bold);
+                            color: #FF5050;
+                            margin-bottom: 10px;
+                        }
+                        .vrifid {
+                            font-weight: weights(bold);
+                            color: #29A745;
+        
+                        }
+                        .t-wrp {
+                            display: flex;
+                            text-align: center;
+                            justify-content: flex-start;
+                            h5 {
+                                margin: 0;
+                                padding-top: 5px;
+                            }
+                            .arrow {
+                                width: 8px;
+                                height: 8px;
+                                margin-top: 10px;
+                                margin-left: 3px;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        .btn {
+                            width: 150px;
+                            padding: 10px;
+                            border-radius: 5px;
+                            margin-top: 10px;
+                            overflow: hidden;
+                            position: relative;
+                            display: inline-block;
+                            background-color: white;
+                            font-weight: weights(bold);
+                            color: color(primaryTextColor);
+                            border: 2px solid color(secondaryColor);
+                            &::after {
+                                top: 0;
+                                left: 0;
+                                content: "";
+                                width: 142%;
+                                height: 628%;
+                                position: absolute;
+                                transition: all .6s ease-in-out;
+                                background: color(secondaryColor);
+                                transform: translateX(-115%) translateY(-25%) rotate(45deg);
+                            }
+                            &:hover::after {
+                                transform: translateX(-9%) translateY(-25%) rotate(45deg);
+                            }
+                            &:hover {
+                                color: white;
+                            }
+                            span {
+                                position: relative;
+                                z-index: 1;
+                            }
+                            
+                        }
+                        .btns {
+                            width: 150px;
+                            padding: 10px;
+                            overflow: hidden;
+                            border-radius: 5px;
+                            position: relative;
+                            text-align: center;
+                            display: inline-block;
+                            background-color: white;
+                            font-weight: weights(bold);
+                            color: color(primaryTextColor);
+                            border: 2px solid color(primaryColor);
+                            &::after {
+                                top: 0;
+                                left: 0;
+                                content: "";
+                                width: 145%;
+                                height: 628%;
+                                position: absolute;
+                                transition: all .6s ease-in-out;
+                                background: color(primaryColor);
+                                transform: translateX(-111%) translateY(-25%) rotate(45deg);
+                            }
+                            &:hover::after {
+                                transform: translateX(-9%) translateY(-25%) rotate(45deg);
+                            }
+                            &:hover {
+                                color: white;
+                            }
+                            span {
+                                position: relative;
+                                z-index: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

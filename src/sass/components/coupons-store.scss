@@ -1,0 +1,147 @@
+.sd-wrp {
+    display: flex;
+}
+.cpn-sd {
+    flex: 1;
+}
+.cpn-wrp {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+.crd {
+    width: 440px;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    transition: all linear 0.2s;
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: .2);
+}
+.crd:hover {
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: .3);
+}
+.img-br {
+    width: 250px;
+    // height: 90px;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    border: 2px solid #006780;
+}
+.img-br img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.exclsv {
+    font-weight: weights(bold);
+    color: #FF5050;
+    margin-bottom: 10px;
+}
+.vrifid {
+    font-weight: weights(bold);
+    color: #29A745;
+}
+.t-wrp {
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+}
+    h5 {
+        margin: 0;
+        padding-top: 5px;
+    }
+    .trms {
+        margin: 0;
+        padding-top: 5px;
+        color: color(primaryTextColor);
+    }
+    .arrow {
+        width: 8px;
+        height: 8px;
+        margin-top: 10px;
+        margin-left: 3px;
+        img {
+            width: 100%;
+        }
+    }
+.btn {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    font-weight: weights(bold);
+    color: color(primaryTextColor);
+    border: 2px solid color(secondaryColor);
+}
+.btn::after {
+    top: 0;
+    left: 0;
+    content: "";
+    width: 142%;
+    height: 628%;
+    position: absolute;
+    transition: all .6s ease-in-out;
+    background: color(secondaryColor);
+    transform: translateX(-115%) translateY(-25%) rotate(45deg);
+}
+.btn:hover::after {
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+.btn:hover {
+    color: white;
+}
+span {
+    position: relative;
+    z-index: 1;
+}
+.btns {
+    width: 150px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    background-color: white;
+    font-weight: weights(bold);
+    color: color(primaryTextColor);
+    border: 2px solid color(primaryColor);
+}
+.btns::after {
+    top: 0;
+    left: 0;
+    content: "";
+    width: 145%;
+    height: 628%;
+    position: absolute;
+    transition: all .6s ease-in-out;
+    background: color(primaryColor);
+    transform: translateX(-111%) translateY(-25%) rotate(45deg);
+}
+.btns:hover::after {
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+.btns:hover {
+    color: white;
+}
+span {
+    position: relative;
+    z-index: 1;
+}

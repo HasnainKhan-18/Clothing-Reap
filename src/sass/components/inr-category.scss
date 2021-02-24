@@ -1,0 +1,28 @@
+.ctg-bg {
+    padding: 30px;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    background-color: color(primaryColor);
+}
+.inr-ctg {
+    padding: 20px;
+}
+.Wrp {
+    margin: 0 auto;
+}
+.slider {
+    display: flex;
+}
+.sldr-img {
+    width: 140px;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgba($color: color(borderColor), $alpha: .8);
+}
+.sldr-img img {
+    width: 100%;
+    object-fit: cover;
+}

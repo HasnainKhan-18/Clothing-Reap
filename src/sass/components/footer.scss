@@ -1,0 +1,65 @@
+.footer {
+    background: color(primaryColor);
+    .Wrp {
+        .ftr-wrp {
+            display: flex;
+            justify-content: space-between;
+            padding: 26px 0;
+            .ftr-logo {
+                width: 180px;
+                // height: 100px;
+                img {
+                    width: 100%;
+                    // height: 100%;
+                }
+            }
+            .nav-lnks {
+                width: 150px;
+                color: white;
+                h2 {
+                    font-size:  1.25em;
+                    margin-bottom: 25px;
+                }
+                a {
+                    color: white;
+                    display: block;
+                    margin-bottom: 10px;
+                    transition: all linear 0.2s;
+                    &:hover {
+                        padding-left: 6px;
+                    }
+                }
+                .icn-wrp {
+                    display: flex;
+                    justify-content: space-between;
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        img {
+                            width: 100%;
+                        }
+                        &:hover {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .clsng-ftr {
+        padding: 26px 0;
+        border-top: 1px solid white;
+        .Wrp {
+            p {
+                color: white;
+                text-align: center;
+                em {
+                    font-style: oblique;
+                }
+                b {
+                    font-weight: weights(bold);
+                }
+            }
+        }
+    }
+}

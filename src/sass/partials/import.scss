@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+// ###  /// === Partials === \\\  <start>
+
+// Settings Have Custom Variables, Icons Variable and mixins.
+@import "settings";
+
+// Reset.
+@import "reset";
+
+// Animation.
+@import "animation";
+
+// Default Styling.
+@import "global";
+
+// Custom Grid Functions.
+// @import "grid";
+
+// ###  /// === Partials === \\\  <end>
+
+// Header CSS
+@import "../components/header";
+
+// Footer CSS
+@import "../components/footer";
+
+// Disclosure CSS
+@import "../components/disclosure";
+
+// Default Button CSS Styling using variables and mixing
+@import "../components/button";
+
+// Subscribe Newsletter
+@import "../components/newsletterSection";
+
+// Animate
+@import "../components/animate";
+
+// Side Navigation
+@import "../components/sideNavigation";

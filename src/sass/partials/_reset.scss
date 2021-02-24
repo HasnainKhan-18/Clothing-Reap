@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: middle;
+
+  &,
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1;
+  color: body(color);
+  line-height: body(line-height);
+  background: body(background);
+  overflow-x: hidden;
+  @include font();
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+select,
+textarea,
+button,
+a {
+  &,
+  &:hover,
+  &:focus {
+    outline: none;
+    color: color(primaryTextColor);
+  }
+}
+
+input,
+textarea {
+  @include placeholder {
+    color: #dddfdf;
+  }
+}
+
+a,
+button,
+*[role="button"] {
+  cursor: pointer;
+  user-select: none;
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin-left: 17px;
+  list-style-position: left;
+}
+
+sub {
+  vertical-align: top;
+  font-size: smaller;
+}

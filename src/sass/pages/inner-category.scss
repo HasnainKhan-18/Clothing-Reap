@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@import "../partials/import";
+
+// Libraries
+@import "../libraries/slick/slick";
+@import "../libraries/slick/slick-theme";
+// -------- /
+
+// Component
+@import "../components/header2.scss";
+@import "../components/inr-category.scss";
+@import "../components/coupons-store.scss";
+@import "../components/widgets.scss";
+@import "../components/newsletter.scss";
+// -------- /
+

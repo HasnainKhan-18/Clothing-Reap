@@ -1,0 +1,67 @@
+.banner {
+    height: 500px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .Wrp {
+        h1 {
+            font-size: 65px;
+        }
+        .wrpr {
+            display: flex;
+            .src-sd {
+                width: 50%;
+                display: flex;
+                padding: 4px;
+                border-radius: 50px;
+                border: 2px solid color(primaryColor);
+                .srch-br {
+                    flex: 1;
+                    padding: 10px;
+                    width: 100%;
+                    font-size: 15px;
+                    border-radius: 50px;
+                }
+                .btn {
+                    width: 130px;
+                    color: white;
+                    font-size: 18px;
+                    padding: 15px 30px;
+                    font-weight: weights(bold);
+                    border-radius: 50px;
+                    background-color: color(secondaryColor);
+                }
+            }
+            .ban-sd {
+                // align-items: flex-end;
+               .box {
+                   width: 300px;
+                   height: 618px;
+                   top: -78px;
+                   right: 84px;
+                   position: absolute;
+                   background-color: color(primaryColor);
+                   .sldr {
+                       width: 341px;
+                       height: 490px;
+                    }
+                    .sld-img {
+                        // margin-left: 197px;
+                        img {
+                            max-width: 97%;
+                        }
+                    }
+                }
+                .sld-btn {
+                    margin-left: 20px;
+                    margin-top: 30px;
+                    .nxt-btn {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

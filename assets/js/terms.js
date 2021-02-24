@@ -1,0 +1,1 @@
+"use strict";var close=document.querySelector(".closed"),tpopov=document.querySelector(".tpopov");function closeModal(){modal.style.display="none"}close&&close.addEventListener("click",closeModal),tpopov&&tpopov.addEventListener("click",closeModal);

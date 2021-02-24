@@ -1,0 +1,43 @@
+.header {
+  padding: 20px;
+}
+.Wrp {
+  margin: 0 auto;
+}
+.wrap {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 180px;
+}
+.logo-wht {
+  display: none;
+}
+.links {
+  @media(min-width:992px) {
+    margin-left: 250px;
+  }
+}
+a {
+  color: color(primaryTextColor);
+  padding: 10px 25px;
+  position: relative;
+  display: inline-block;
+}
+a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: color(primaryColor);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover::after {
+  width: 100%;
+  left: 0;
+}

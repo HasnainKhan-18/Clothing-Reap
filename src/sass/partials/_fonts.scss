@@ -1,0 +1,40 @@
+/*==============
+Font Face Starts
+================ */
+
+// Font Face
+@each $fw_key, $fw in $font-weights {
+  @include font-face(
+    $font-family,
+    "#{$fonts-root}#{$font-family-pathname}-#{$fw_key}",
+    #{$fw},
+    normal,
+    woff2
+  );
+}
+
+// Icomoon Font Face
+@include font-face(
+  "#{$icomoon-font-family}",
+  "#{$fonts-root}#{$icomoon-font-family}",
+  normal,
+  normal,
+  woff
+);
+
+// Custom Fonts
+@if variable-exists(custom-fonts) {
+  @each $family, $weights in $custom-fonts-weights {
+    $family-lowercase: to-lower-case($family);
+
+    @each $fw_key, $fw in $weights {
+      @include font-face(
+        $family,
+        "#{$fonts-root}#{$family-lowercase}-#{$fw_key}",
+        #{$fw},
+        normal,
+        woff
+      );
+    }
+  }
+}

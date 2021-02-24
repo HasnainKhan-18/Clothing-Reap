@@ -1,0 +1,137 @@
+// Button
+.btn {
+  padding: $btn-padding;
+  text-align: center;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  transition: 300ms ease-in-out;
+  min-width: 48px;
+  display: inline-block;
+
+  @if $btn-radius {
+    @include border-radius($btn-radius);
+  }
+
+  &:not(.linebx) {
+    // background: $btn-default-background;
+
+    @if variable-exists("btn-default-color") {
+      // color: $btn-default-color;
+    } @else {
+      @include color-yiq($btn-default-background);
+    }
+
+    i {
+      margin-right: 5px;
+    }
+
+    // &:hover {
+    //   @if ($btn-default-background !=white) {
+    //     background: lighten($btn-default-background, 5%);
+    //   } @else {
+    //     background: #f7f7f7;
+    //   }
+    // }
+
+    &:focus {
+      background: darken($btn-default-background, 5%);
+    }
+
+    // Button Theme
+    @each $key, $val in $btn-themes {
+      &.#{$key} {
+        background: $val;
+
+        @if (str-index(inspect($val), "gradient")) {
+          position: relative;
+          overflow: hidden;
+
+          @each $k, $c in $themeColors {
+            @if (str-index(inspect($val), inspect($c))) {
+              @include color-yiq(darken($c, 10%));
+            }
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            @include transition(0.3s ease-in-out);
+            background: transparent;
+          }
+
+          &:hover:before {
+            background: rgba(white, 0.1);
+          }
+
+          &:focus:before {
+            background: rgba(black, 0.1);
+          }
+        } @else {
+          @include color-yiq(darken($val, 10%));
+
+          &:hover {
+            background: lighten($val, 5%);
+          }
+
+          &:focus {
+            background: darken($val, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  &.linebx {
+    background: transparent;
+
+    border: {
+      width: map-get($btn-default-linebox, width);
+      color: map-get($btn-default-linebox, color);
+      style: map-get($btn-default-linebox, style);
+    }
+
+    color: map-get($btn-default-linebox, color);
+
+    &:hover {
+      background: map-get($btn-default-linebox, color);
+    }
+
+    &:focus {
+      background: darken(map-get($btn-default-linebox, color), 5%);
+    }
+
+    &:hover,
+    &:focus {
+      @include color-yiq(map-get($btn-default-linebox, color));
+    }
+
+    @each $key, $val in $btn-line-themes {
+      &.#{$key} {
+        border-color: $val;
+        color: $val;
+
+        &:hover {
+          background: lighten($val, 5%);
+        }
+
+        &:focus {
+          background: darken($val, 5%);
+        }
+
+        &:hover,
+        &:focus {
+          @include color-yiq($val);
+        }
+      }
+    }
+  }
+}
+
+button.btn {
+  border: 0;
+  cursor: pointer;
+}

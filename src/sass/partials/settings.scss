@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/* =========
+   Functions 
+   ========= */
+//@import "../partials/functions";
+// -----------------------------------------/
+
+/* =======
+   Icomoon 
+   ======= */
+@import "../icomoon/variables";
+// -----------------------------------------/
+
+/* ===============
+   Default Setting 
+   =============== */
+
+// Main Roots
+$compiled-root: ".." !default;
+// $compiled-root: ".." !default;
+$fonts-root: "#{$compiled-root}/fonts/" !default;
+$images-root: "#{$compiled-root}/images/" !default;
+$icomoon-font-path: $fonts-root; // Icomoon Font Path Changed
+
+/* ===========
+   T1me Color
+   =========== 
+   * primaryColor: Dark Navy blue color
+   * primaryTextColor: Dark Navy blue color
+   * secondaryColor: Dark Royal red color
+   * greyColor: Light Grey color
+   */
+$themeColors: (
+  primaryColor: #171144,
+  secondaryColor: #FF79FD,
+  borderColor: #006780,
+  greyColor: #e8eff7,
+  primaryTextColor: #171144,
+);
+
+@function color($color-name) {
+  @return map-get($themeColors, $color-name);
+}
+
+// -----------------------------------------/
+
+$body: (
+  background: white,
+  color: #{color(primaryTextColor)},
+  line-height: 1.3,
+);
+$font-family: "Lato";
+$font-size: 14px;
+$font-weights: (
+  light: 300,
+  regular: 400,
+  bold: 700,
+);
+$font-family-pathname: to-lower-case($font-family);
+$border-radius: 5px;
+$total-grids: 12;
+$spacer: 15px;
+
+$custom-fonts: "Oswald";
+$custom-fonts-weights: (
+  nth($custom-fonts, 1): (
+    regular: 400,
+    bold: 700,
+  ),
+);
+
+@function body($body-key) {
+  @return map-get($body, $body-key);
+}
+
+@function weights($font-weight) {
+  @return map-get($font-weights, $font-weight);
+}
+
+/* ======
+   Button
+   ====== */
+$btn-padding: 0.9em 3em;
+$btn-lg-padding: 15px 30px;
+$btn-default-background: white;
+$btn-default-color: color(primaryColor);
+$btn-themes: (
+  pcolor: color(primaryColor),
+  scolor: color(secondaryColor),
+  tcolor: #eeeeee,
+);
+$btn-line-themes: (
+  pcolor: color(primaryColor),
+  scolor: color(secondaryColor),
+);
+// $btn-color: color(primaryColor);
+$btn-default-linebox: (
+  width: 1px,
+  style: solid,
+  color: #6b869d,
+);
+$btn-radius: 3px;
+$btn-font-size: 15px;
+$btn-lg-font-size: 18px;
+$btn-font-weight: 400;
+// -----------------------------------------/
+
+/* ==============
+   Default Border
+   ============== */
+$border: (
+  style: solid,
+  width: 2px,
+  color: #e6e6e6,
+);
+// -----------------------------------------/
+
+/* ===============
+   Default Setting
+   =============== */
+$WrapperWidth: 1200px; // Wrapper Width
+$maxWidth: 100%;
+$SecGap: 60px; // Section Gap Spacing
+// -----------------------------------------/
+
+/* =======
+   Plugins
+   ======= 
+   * Slick Slider
+   * Custom Scroll Bar 
+   */
+// Slick Styling
+$slick-font-family: $icomoon-font-family; // Disabling Font Face Of Slick & Adding Custom Icon Font Family
+$slick-prev-character: $bp_left; // Custom Icon Chevron Left Content
+$slick-next-character: $bp_right; // Custom Icon Chevron Right Content
+$slick-arrow-color: color(primaryColor);
+
+// jQuery Custom Scrollbar
+$customScrollbar: color(primaryColor);
+$customScrollbarRail: rgba(black, 0.1);
+// -----------------------------------------/
+
+/* ========================
+   Social Media Theme Color
+   ======================== */
+$socialMediaThemeColor: (
+  facebook: #3b5998,
+  twitter: #1da1f2,
+  instagram: #dd2a7b,
+  linkedin: #0274b3,
+  youtube: #e62117,
+  pinterest: #e56262,
+);
+
+@function socialColor($color-name) {
+  @return map-get($socialMediaThemeColor, $color-name);
+}
+
+// -----------------------------------------/
+
+/* =============
+   Media Queries
+   =============
+   * Desktop: Desktop Screen
+   * Tablet: Tablet Screen
+   * TabletPortrait: Tablet Portrait Screen
+   * Mobile: Mobile Screen
+   * MobilePortrait: Mobile Portrait Screen
+   */
+$mediaQueries: (
+  lg: 1200px,
+  md: 992px,
+  sm: 768px,
+  xs: 641px,
+  xxs: 481px,
+);
+
+@function mediaQuery($size) {
+  @return map-get($mediaQueries, $size);
+}
+
+// -----------------------------------------/
+
+@import "_mixins";

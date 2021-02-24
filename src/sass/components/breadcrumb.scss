@@ -1,0 +1,33 @@
+.brdcrb {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 10px -10px;
+  align-items: center;
+
+  a,
+  span {
+    padding: 0 10px;
+  }
+
+  li {
+    line-height: 1;
+    + li {
+      &:before {
+        content: ">";
+      }
+    }
+  }
+
+  a {
+    color: white;
+  }
+
+  span {
+    font-weight: 700;
+  }
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}

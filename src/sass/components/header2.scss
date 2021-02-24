@@ -1,0 +1,58 @@
+.header {
+  padding: 20px;
+  background-color: color(primaryColor);
+  border-bottom: 1px solid rgba($color: white, $alpha: .7);
+}
+.Wrp {
+  margin: 0 auto;
+}
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+.logo {
+  display: none;
+}
+.logo-wht {
+  width: 160px;
+  display: block; 
+}
+.logo-wht img {
+  width: 100%;
+}
+.links {
+  margin: 0;
+}
+a {
+  color: white;
+  padding: 10px 25px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover::after {
+  width: 100%;
+  left: 0;
+  color: white;
+}
+.srch-icn {
+  width: 20px;
+  height: 20px; 
+  .img {
+    width: 100%;
+  }
+}
