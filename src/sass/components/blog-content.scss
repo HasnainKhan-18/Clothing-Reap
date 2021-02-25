@@ -6,7 +6,7 @@
     background-color: color(primaryColor);
 }
 .blog {
-    padding: 20px;
+    padding: 30px;
     padding-bottom: 0;
 }
 .Wrp {
@@ -15,21 +15,27 @@
 .sldr {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .tp-blg {
     width: 180px;
     height: 180px;
     margin: 0 auto;
+    position: relative;
     background-size: cover;
-    background-image: url(../images/blog-image.png);
     box-shadow: 0 0 5px rgba($color: #000000, $alpha: .2);
+}
+.tp-blg img {
+    width: 100%;
+    height: 100%;
 }
 .ovrlay {
     width: 100%;
     height: 100%;
-    align-items: flex-end;
+    top: 0;
+    position: absolute;
     padding-bottom: 15px;
+    align-items: flex-end;
     background-color: rgba($color: color(primaryColor), $alpha: .7);
 }
 .tag {
@@ -37,6 +43,7 @@
     padding: 15px;
     font-size: 16px;
     text-align: center;
+    color: color(primaryTextColor);
     background-color: white;
     font-weight: weights(bold);
 }
@@ -70,13 +77,16 @@
 .content {
     padding: 0 15px;
 }
+.tag-cnt {
+    padding: 0;
+}
 .tag-wrp {
     display: flex;
     margin-left: 0;
 }
 .f-tag {
     // width: 70px;
-    padding: 5px;
+    padding: 5px 8px;
     margin-left: 0;
     font-size: 12px;
     margin-right: 8px;
@@ -84,8 +94,12 @@
     border-radius: 5px;
     margin-bottom: 10px;
     list-style-type: none;
+    color: color(primaryTextColor);
     font-weight: weights(bold);
     background-color: #FFE600;
+}
+.blg-hdng {
+    padding: 0;
 }
 .hdng {
     color: #4D4D4D;
@@ -103,6 +117,7 @@ span {
     display: flex;
 }
 .athr {
+    padding: 0;
     color: color(borderColor);
     margin-right: 10px;
     text-decoration: underline;
@@ -115,6 +130,7 @@ span {
     text-align: center;
     font-weight: weights(bold);
     transition: all linear 0.2s;
+    color: color(primaryTextColor);
     border: 1px solid color(primaryColor);
 }
 .blg-btn:hover{
@@ -153,10 +169,10 @@ h3 {
     margin: 5px 6px;
     border-radius: 3px;
     font-style: normal;
-    box-shadow: 0 0 5px rgba($color: #000000, $alpha: .2);
     transition: all linear 0.4s;
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: .2);
 }
 .ctg-lnk:hover {
-    background-color: color(primaryColor);
     color: white;
+    background-color: color(primaryColor);
 }

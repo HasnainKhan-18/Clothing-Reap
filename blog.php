@@ -8,33 +8,39 @@
     <div class="Wrp">
         <div class="sldr">
             <a href="" class="tp-blg">
+                <img src="./assets/images/blog-image.png" alt="">
                 <div class="ovrlay flex">
                     <div class="tag">Travel</div>
                 </div>
             </a>
             <a href="" class="tp-blg">
+                <img src="./assets/images/blg-image-2.png" alt="">
                 <div class="ovrlay flex">
-                    <div class="tag">Travel</div>
+                    <div class="tag">Shopping</div>
                 </div>
             </a>
             <a href="" class="tp-blg">
+                <img src="./assets/images/blg-image-3.png" alt="">
                 <div class="ovrlay flex">
-                    <div class="tag">Travel</div>
+                    <div class="tag">Education</div>
                 </div>
             </a>
             <a href="" class="tp-blg">
+                <img src="./assets/images/blg-image-4.png" alt="">
                 <div class="ovrlay flex">
-                    <div class="tag">Travel</div>
+                    <div class="tag">Food & Beverages</div>
                 </div>
             </a>
             <a href="" class="tp-blg">
+                <img src="./assets/images/blg-image-5.png" alt="">
                 <div class="ovrlay flex">
-                    <div class="tag">Travel</div>
+                    <div class="tag">Education</div>
                 </div>
             </a>
             <a href="" class="tp-blg">
+                <img src="./assets/images/blg-image-6.png" alt="">
                 <div class="ovrlay flex">
-                    <div class="tag">Travel</div>
+                    <div class="tag">Food & Beverages</div>
                 </div>
             </a>
         </div>
@@ -46,13 +52,13 @@
                         <img src="./assets/images/blg-img.png" alt="">
                     </div>
                     <div class="content">
-                        <a href="">
+                        <a href="" class="tag-cnt">
                             <ul class="tag-wrp">
                                 <li class="f-tag">Electronics</li>
                                 <li class="f-tag">Internet</li>
                             </ul>
                         </a>
-                        <a href="">
+                        <a href="" class="blg-hdng">
                             <h2 class="hdng">6 Styles and Spring Trends to Embrace This Season</h2>
                         </a>
                         <p>Seaside Patterned Stripes Add an extra oomph to your look with a perfectly stitched dress and save with Fashion world promo codes..</p>
@@ -67,13 +73,13 @@
                         <img src="./assets/images/blg-img.png" alt="">
                     </div>
                     <div class="content">
-                        <a href="">
+                        <a href="" class="tag-cnt">
                             <ul class="tag-wrp">
                                 <li class="f-tag">Jewellery & Watches</li>
                                 <li class="f-tag">Clothing & Accessories</li>
                             </ul>
                         </a>
-                        <a href="">
+                        <a href="" class="blg-hdng">
                             <h2 class="hdng">6 Styles and Spring Trends to Embrace This Season</h2>
                         </a>
                         <p>Seaside Patterned Stripes Add an extra oomph to your look with a perfectly stitched dress and save with Fashion world promo codes..</p>
@@ -88,13 +94,13 @@
                         <img src="./assets/images/blg-img.png" alt="">
                     </div>
                     <div class="content">
-                        <a href="">
+                        <a href="" class="tag-cnt">
                             <ul class="tag-wrp">
                                 <li class="f-tag">Fashion</li>
                                 <li class="f-tag">Flowers and Gifts</li>
                             </ul>
                         </a>
-                        <a href="">
+                        <a href="" class="blg-hdng">
                             <h2 class="hdng">6 Styles and Spring Trends to Embrace This Season</h2>
                         </a>
                         <p>Seaside Patterned Stripes Add an extra oomph to your look with a perfectly stitched dress and save with Fashion world promo codes..</p>

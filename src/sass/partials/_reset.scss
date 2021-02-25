@@ -59,10 +59,8 @@ table {
 input,
 select,
 textarea,
-button,
-a {
+button {
   &,
-  &:hover,
   &:focus {
     outline: none;
     color: color(primaryTextColor);

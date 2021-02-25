@@ -7,22 +7,22 @@
             </div>
             <nav class="nav-lnks">
                 <h2>Browser</h2>
-                <a href="http://localhost/clothing-reap/events.php">Events</a>
-                <a href="http://localhost/clothing-reap/sitemap.php">Stores</a>
-                <a href="http://localhost/clothing-reap/categories.php">Categories</a>
-                <a href="http://localhost/clothing-reap/contact-us.php">Contact Us</a>
+                <a class="nv-link" href="http://localhost/clothing-reap/events.php">Events</a>
+                <a class="nv-link" href="http://localhost/clothing-reap/sitemap.php">Stores</a>
+                <a class="nv-link" href="http://localhost/clothing-reap/categories.php">Categories</a>
+                <a class="nv-link" href="http://localhost/clothing-reap/contact-us.php">Contact Us</a>
             </nav>
             <nav class="nav-lnks">
                 <h2>Help</h2>
-                <a href="http://localhost/clothing-reap/blog.php">Blog</a>
-                <a href="">Use Coupon</a>
-                <a href="">Why Contact Us?</a>
+                <a class="nv-link" href="http://localhost/clothing-reap/blog.php">Blog</a>
+                <a class="nv-link" href="">Use Coupon</a>
+                <a class="nv-link" href="">Why Contact Us?</a>
             </nav>
             <nav class="nav-lnks">
                 <h2>About</h2>
-                <a href="http://localhost/clothing-reap/about-us.php">About Us</a>
-                <a href="http://localhost/clothing-reap/privacy-policy.php">Privacy Policy</a>
-                <a href="">Terms & Conditions</a>
+                <a class="nv-link" href="http://localhost/clothing-reap/about-us.php">About Us</a>
+                <a class="nv-link" href="http://localhost/clothing-reap/privacy-policy.php">Privacy Policy</a>
+                <a class="nv-link" href="">Terms & Conditions</a>
             </nav>
             <nav class="nav-lnks">
                 <h2>Social Media</h2>

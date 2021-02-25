@@ -1,5 +1,5 @@
 .wdgt-sd {
-  width: 273px;
+  width: 300px;
   padding: 15px 0;
 }
 .wdgt-str {
@@ -35,4 +35,28 @@ h3 {
 .ctg-lnk:hover {
   background-color: color(primaryColor);
   color: white;
+}
+.ltr-wrp {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ctg-link {
+  margin: 5px;
+  padding: 8px;
+  color: color(primaryTextColor);
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all linear 0.2s;
+  box-shadow: 0 0 5px rgba($color: #000000, $alpha: .2);
+}
+.ctg-link:hover {
+  color: white;
+  background-color: color(primaryColor);
+}
+
+
+@media(max-width:991px) {
+  .wdgt-sd {
+    display: none;
+  }
 }

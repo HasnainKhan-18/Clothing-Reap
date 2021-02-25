@@ -8,14 +8,20 @@
     display: flex;
 }
 .image {
-    width: 30%;
+    width: 400px;
+}
+.image img {
+    width: 100%;
 }
 .srch-wrp {
     flex: 1;
     width: 100%;
-    flex-direction: column;
+    text-align: center;
 }
-.src-sd {
+.nws-hdng {
+    font-size: 32px;
+}
+.nws-sd {
     width: 100%;
     display: flex;
     padding: 4px;
@@ -29,19 +35,27 @@
     font-size: 15px;
     border-radius: 50px;
 }
-.nws-btn {
+.nwsBtn {
     width: 130px;
     color: white;
     font-size: 18px;
     padding: 15px 30px;
-    font-weight: weights(bold);
     border-radius: 50px;
+    font-weight: weights(bold);
     background-color: color(secondaryColor);
 }
-p {
+.nws-p {
     padding-bottom: 15px;
 }
 .txt {
+    text-align: center;
     padding-top: 15px;
     padding-bottom: 0;
+}
+
+
+@media(max-width:991px) {
+    .wrapr {
+        flex-direction: column;
+    }
 }

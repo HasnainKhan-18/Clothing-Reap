@@ -6,34 +6,37 @@
     font-weight: weights(bold);
     background-color: color(primaryColor);
 }
-
-
 .ctg-hom {
     padding: 20px;
-    .Wrp {
-        .ctg-wrp {
-            display: grid;
-            gap: 30px;
-            grid-template-columns: repeat(6,1fr);
-            margin-top: 40px;
-            .ctgry {
-                text-align: center;
-                padding: 10px;
-                background-color: rgba($color: color(borderColor), $alpha: .1);
-                h4 {
-                    margin: 0;
-                    font-size: 15px;
-                }
-                .icn {
-                    display: inline-flex;
-                    width: 100px;
-                    height: 100px;
-                    img {
-                        width: 70%;
-                        object-fit: cover;
-                    }
-                }
-            }
-        }
-    }
+}
+.Wrp {
+    margin: 0 auto;
+}
+.ctg-hdng {
+    font-size: 32px;
+}
+.ctg-wrp {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 40px;
+}
+.ctgry {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba($color: color(borderColor), $alpha: .1);
+}
+.ctgry h4 {
+    margin: 0;
+    font-size: 15px;
+    color: color(primaryTextColor);
+}
+.icn {
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+}
+.icn img {
+    width: 70%;
+    object-fit: cover;
 }

@@ -25,14 +25,6 @@
                     </div>
 
                 </div>
-                <div class="sld-btn">
-                    <span role="button" class="prev-btn">
-                        <img src="./assets/images/svg/icon-slider-prev.svg" alt="">
-                    </span>
-                    <span role="button" class="nxt-btn">
-                        <img src="./assets/images/svg/icon-slider-next.svg" alt="">
-                    </span>
-                </div>
             </div>
         </div>
     </div>
@@ -42,7 +34,7 @@
 <!-- Home Coupon <Component:Start> -->
 <div class="hm-cpn">
     <div class="Wrp">
-        <h1>Featured Coupons</h1>
+        <h1 class="copn-hdng">Featured Coupons</h1>
         <div class="cpn-wrpr">
             <div class="cpns">
                 <a href="" class="img-br">
@@ -53,27 +45,27 @@
                 <a href="Javascript:;">
                     <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
                 </a>
-                <a href="http://localhost/clothing-reap/?code=123" class="btn"><span>Reveal Code</span></a>
-                <a class="t-wrp Vhc" href="">
+                <a href="http://localhost/clothing-reap/?code=123" class="cpn-btn"><span class="cpn-txt">Reveal Code</span></a>
+                <a class="trm-wrp flex" href="">
                     <h5>Terms</h5>
-                    <div class="arrow Flx">
+                    <div class="arrows flex">
                         <img src="./assets/images/svg/up-arrow.svg" alt="">
                     </div>
                 </a>
             </div>
             <div class="cpn-wrp">
                 <div class="crd">
-                    <a href="" class="img-br">
+                    <a href="" class="img-bar">
                         <img src="./assets/images/muck-logo.png" alt="">
                     </a>
                     <div class="content">
-                        <span class="exclsv">Exclusive</span>
-                        <span class="vrifid">Verified</span>
+                        <span class="exclsve">Exclusive</span>
+                        <span class="vrifide">Verified</span>
                         <a href="Javascript:;">
-                            <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                            <h4 class="crd-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                         </a>
-                        <a href="http://localhost/clothing-reap/?code=123" class="btn"><span>Reveal Code</span></a>
-                        <a class="t-wrp Vhc" href="">
+                        <a href="http://localhost/clothing-reap/?code=123" class="crd-btn"><span class="cpn-txt">Reveal Code</span></a>
+                        <a class="t-wrp flex" href="">
                             <h5>Terms</h5>
                             <div class="arrow Flx">
                                 <img src="./assets/images/svg/up-arrow.svg" alt="">
@@ -82,17 +74,17 @@
                     </div>
                 </div>
                 <div class="crd">
-                    <a href="" class="img-br">
+                    <a href="" class="img-bar">
                         <img src="./assets/images/muck-logo.png" alt="">
                     </a>
                     <div class="content">
-                        <span class="exclsv">Exclusive</span>
-                        <span class="vrifid">Verified</span>
+                        <span class="exclsve">Exclusive</span>
+                        <span class="vrifide">Verified</span>
                         <a href="Javascript:;">
-                            <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                            <h4 class="crd-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                         </a>
-                        <a href="http://localhost/clothing-reap/?deal=123" class="btns"><span>Show Now</span></a>
-                        <a class="t-wrp Vhc" href="">
+                        <a href="http://localhost/clothing-reap/?deal=123" class="crd-btns"><span class="cpn-txt">Show Now</span></a>
+                        <a class="t-wrp flex" href="">
                             <h5>Terms</h5>
                             <div class="arrow Flx">
                                 <img src="./assets/images/svg/up-arrow.svg" alt="">
@@ -101,17 +93,17 @@
                     </div>
                 </div>
                 <div class="crd">
-                    <a href="" class="img-br">
+                    <a href="" class="img-bar">
                         <img src="./assets/images/muck-logo.png" alt="">
                     </a>
                     <div class="content">
-                        <span class="exclsv">Exclusive</span>
-                        <span class="vrifid">Verified</span>
+                        <span class="exclsve">Exclusive</span>
+                        <span class="vrifide">Verified</span>
                         <a href="Javascript:;">
-                            <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                            <h4 class="crd-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                         </a>
-                        <a href="http://localhost/clothing-reap/?code=123" class="btn"><span>Reveal Code</span></a>
-                        <a class="t-wrp Vhc" href="">
+                        <a href="http://localhost/clothing-reap/?code=123" class="crd-btn"><span class="cpn-txt">Reveal Code</span></a>
+                        <a class="t-wrp flex" href="">
                             <h5>Terms</h5>
                             <div class="arrow Flx">
                                 <img src="./assets/images/svg/up-arrow.svg" alt="">
@@ -120,17 +112,17 @@
                     </div>
                 </div>
                 <div class="crd">
-                    <a href="" class="img-br">
+                    <a href="" class="img-bar">
                         <img src="./assets/images/muck-logo.png" alt="">
                     </a>
                     <div class="content">
-                        <span class="exclsv">Exclusive</span>
-                        <span class="vrifid">Verified</span>
+                        <span class="exclsve">Exclusive</span>
+                        <span class="vrifide">Verified</span>
                         <a href="Javascript:;">
-                            <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                            <h4 class="crd-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                         </a>
-                        <a href="" class="btns"><span>Show Now</span></a>
-                        <a class="t-wrp Vhc" href="">
+                        <a href="" class="crd-btns"><span class="cpn-txt">Show Now</span></a>
+                        <a class="t-wrp flex" href="">
                             <h5>Terms</h5>
                             <div class="arrow Flx">
                                 <img src="./assets/images/svg/up-arrow.svg" alt="">
@@ -149,7 +141,7 @@
 <!-- Home Category <Component:Start> -->
 <div class="ctg-hom">
     <div class="Wrp">
-        <h1>Top Categories</h1>
+        <h1 class="ctg-hdng">Top Categories</h1>
         <div class="ctg-wrp">
             <a href="" class="ctgry">
                 <div class="icn flex">

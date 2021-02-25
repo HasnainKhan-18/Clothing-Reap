@@ -16,23 +16,25 @@
   display: none;
 }
 .logo-wht {
-  width: 160px;
+  width: 200px;
   display: block; 
 }
 .logo-wht img {
   width: 100%;
 }
 .links {
+  display: flex;
+  align-items: center;
   margin: 0;
 }
-a {
+.nv-lnk {
   color: white;
   padding: 10px 25px;
   position: relative;
   display: inline-block;
   text-align: center;
 }
-a::after {
+.nv-lnk::after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -44,7 +46,7 @@ a::after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover::after {
+.nv-lnk:hover::after {
   width: 100%;
   left: 0;
   color: white;
@@ -52,6 +54,7 @@ a:hover::after {
 .srch-icn {
   width: 20px;
   height: 20px; 
+  display: block;
   .img {
     width: 100%;
   }

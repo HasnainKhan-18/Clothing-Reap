@@ -1,0 +1,33 @@
+.fltr {
+    flex: 1;
+    margin: 20px 10px 0;
+    color: white;
+    flex-wrap: wrap;
+    // padding: 20px;
+    border-radius: 10px 0;
+    background-color: white;
+    justify-content: flex-start;
+    box-shadow: 0 0 3px rgba($color: #000000, $alpha: .2);
+}
+.flt-bx {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px 0 0 0;
+    background-color: color(primaryColor);
+}
+.fltr-lnk {
+    color: color(primaryTextColor);
+    padding: 6px ; 
+    margin: 0 5px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all linear 0.2s;
+}
+.active {
+    color: color(primaryTextColor);
+    padding: 6px;
+    border-radius: 5px;
+    margin-left: 20px;
+    border: 3px solid color(primaryColor);
+}

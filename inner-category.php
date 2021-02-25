@@ -34,6 +34,13 @@
         </div>
         <div class="sd-wrp">
             <div class="cpn-sd">
+                <div class="fltr flex">
+                    <span class="flt-bx">FILTER BY</span>
+                    <a href="" class="active">All</a>
+                    <a class="fltr-lnk" href="">Codes</a>
+                    <a class="fltr-lnk" href="">Deals</a>
+                    <a class="fltr-lnk" href="">Students</a>
+                </div>
                 <div class="cpn-wrp">
                     <div class="crd">
                         <a href="" class="img-br">
@@ -43,9 +50,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btn"><span>Reveal Code</span></a>
+                            <a href="javascript:;" class="btn"><span class="btn-txt">Reveal Code</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -62,9 +69,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btns"><span>Show Now</span></a>
+                            <a href="javascript:;" class="btns"><span class="btn-txt">Show Now</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -81,9 +88,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btn"><span>Reveal Code</span></a>
+                            <a href="javascript:;" class="btn"><span class="btn-txt">Reveal Code</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -100,9 +107,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btns"><span>Show Now</span></a>
+                            <a href="javascript:;" class="btns"><span class="btn-txt">Show Now</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -119,9 +126,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btn"><span>Reveal Code</span></a>
+                            <a href="javascript:;" class="btn"><span class="btn-txt">Reveal Code</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -138,9 +145,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btns"><span>Show Now</span></a>
+                            <a href="javascript:;" class="btns"><span class="btn-txt">Show Now</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -157,9 +164,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btn"><span>Reveal Code</span></a>
+                            <a href="javascript:;" class="btn"><span class="btn-txt">Reveal Code</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -176,9 +183,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btns"><span>Show Now</span></a>
+                            <a href="javascript:;" class="btns"><span class="btn-txt">Show Now</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -195,9 +202,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btn"><span>Reveal Code</span></a>
+                            <a href="javascript:;" class="btn"><span class="btn-txt">Reveal Code</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -214,9 +221,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btns"><span>Show Now</span></a>
+                            <a href="javascript:;" class="btns"><span class="btn-txt">Show Now</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -233,9 +240,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btn"><span>Reveal Code</span></a>
+                            <a href="javascript:;" class="btn"><span class="btn-txt">Reveal Code</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -252,9 +259,9 @@
                             <span class="exclsv">Exclusive</span>
                             <span class="vrifid">Verified</span>
                             <a href="Javascript:;">
-                                <h4>10% Off Everything Plus Free Shipping & Free Return</h4>
+                                <h4 class="cpn-hdng">10% Off Everything Plus Free Shipping & Free Return</h4>
                             </a>
-                            <a href="javascript:;" class="btns"><span>Show Now</span></a>
+                            <a href="javascript:;" class="btns"><span class="btn-txt">Show Now</span></a>
                             <a class="t-wrp Vhc" href="">
                                 <h5 class="trms">Terms</h5>
                                 <div class="arrow Flx">
@@ -287,6 +294,14 @@
                             <span class="ctg-lnk" role="button">Home & Garden</span>
                             <span class="ctg-lnk" role="button">Pets</span>
                         </div>
+                    </div>
+                </div>
+                <div class="rltd-str">
+                    <h3>Browse By Stores</h3>
+                    <div class="ltr-wrp">
+                        <?php foreach (range("A", "Z") as $i) { ?>
+                            <span role="button" class="ctg-link"><?php echo $i ?></span>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
